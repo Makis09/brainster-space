@@ -1,0 +1,105 @@
+.Homepage{
+    padding: 0;
+}
+.Homepage .MainImageAndHeader{
+    background-image: url('../../assets/images/homepage/IMG_7707.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.Homepage .darken{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: inherit;
+    margin: 0 -15px;
+}
+.darken h1{
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.AboutUs, .EventsHomePage {
+    padding: 100px 100px 0 100px;
+}
+.AboutUs h1{
+   margin-bottom: 50px;
+   color: black;
+   font-size: 3em;
+   font-weight: 700;
+   animation-name: hh;
+   animation-duration: 3000ms;
+}
+@keyframes hh {
+    from {
+        opacity: 0;
+    }
+    to {opacity: 1;}
+  }
+.badge-pill{
+    background-color: rgb(235, 196, 47);
+    padding: 10px 15px;
+    margin: auto 0;
+}
+.AboutUs .HorizontalBigCard{
+    padding: 100px 15px;
+    animation-name: cardAnimate;
+    animation-duration: 1500ms;
+}
+@keyframes cardAnimate {
+    from {
+        opacity: 0.8;
+        transform: translateX(-50px);
+    }
+    to {opacity: 1;}
+  }
+.calendarBtn svg{
+    margin-right: 7px;
+}
+.calendarBtn{
+    margin: 15px 15px 15px auto !important;
+    display: block;
+    width: fit-content;
+}
+.Coworking{
+    flex-direction: row-reverse;
+    padding: 100px;
+}
+.Coworking .btn, .Coworking{
+    text-decoration: line-through;
+}
+.Coworking .btn{
+    margin-top: 30px;
+    offset: 0.5rem;
+}
+.bs-popover-bottom{
+    margin: 0 !important;
+    top: 0.5rem !important;
+}
+.EventsSpaceHomePage{
+    padding: 0 100px;
+}
+.PartnershipSection{
+    margin: 100px;
+    text-align: center;
+}
+@media(max-width: 991px){
+    .AboutUs, .Coworking {
+        padding: 50px 0;
+    }
+    .EventsSpaceHomePage, .EventsHomePage{
+        padding: 0;
+    }
+    .EventsSpaceHomePage{
+        margin-top: 50px;
+    }
+    .PartnershipSection{
+        margin: 50px 0;
+    }
+    .calendarBtn{
+        margin: 15px auto !important;
+    }
+}

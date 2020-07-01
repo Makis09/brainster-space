@@ -1,0 +1,189 @@
+.navbar{
+    width: 100%;
+    padding: 1.5rem 100px;
+}
+.nav-link, .partnershipButton, .nav-button{
+    font-weight: 500 !important;
+    color: black !important;
+    padding: 0.24rem 0.5rem 0 0.5rem !important;
+    margin: 0 0.5rem !important;
+    border: 2px solid transparent;
+}
+.partnershipButton, .partnershipButton:hover, .partnershipButton:focus, .partnershipButton:active{
+    border: transparent;
+    background: none !important;
+    box-shadow: none !important;
+}
+.nav-link::after, .nav-button::after, .partnershipButton::after {
+    content: '';
+    display: block;
+    margin-top: 0.4rem;
+    margin-left: -5px;
+    width: 0;
+    height: 2.5px;
+    background: rgb(255, 230, 0);
+}
+
+.nav-link:hover::after, .nav-button:hover::after, .nav-link.selected::after, .partnershipButton:hover::after {
+    width: calc(100% + 10px);
+    transition: width .4s;
+}
+.modal-header button{
+    display: none;
+}
+.modal-header, .modal-footer{
+    border: none;
+}
+.modal-header svg{
+    cursor: pointer;
+}
+.modal-title, .modal-header svg{
+    font-size: 2em;
+}
+.navbar svg, .modal-body svg{
+    margin-right: 7px;
+}
+.modal{
+    top: 50px;
+}
+.modal-body span{
+    float: right;
+}
+
+.modal-body label{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.modal-body label span{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+::placeholder{
+    font-style: italic;
+}
+.modal-body ::-ms-tooltip{
+    display: none;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+    background-color: black;
+}
+.navbar-light .navbar-toggler-icon { 
+    background-image: url( "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 204, 7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; 
+}
+.navbar-toggler{
+    padding: 0.5rem 0.6rem !important;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+}
+.toggle-modal-holder{
+    display: flex;
+    flex-direction: row;
+}
+.JoinModal:last-child{
+    display: none;
+    background-color: rgb(235, 196, 47);
+}
+#ggg{
+    width: 0 !important;
+    height: 0 !important;
+    visibility: hidden;
+}
+@media(max-width: 1250px){
+    .navbar{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media(max-width: 1200px){
+    .navbar{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nav-link{
+        font-size: 15px;
+        padding: 0.24rem !important;
+    }
+}
+@media(max-width: 991px){
+    .navbar-collapse{
+        background-color: black;
+        text-align: center;
+        padding: 30px 20px;
+        margin: 24px -15px -25px -15px;
+    }
+    .navbar-collapse a{
+        color: white !important;
+        width: fit-content;
+    }
+    .navbar-nav{
+        align-items: center;
+    }
+    .nav-link{
+        margin: 10px 0 !important;
+    }
+    .ParnershipModal:first-child, .JoinModal:first-child{
+        margin-right: 15px;
+    }
+    .partnershipButton{
+        color: white !important;
+    }
+}
+.SpaceBlogFiltersToggler{
+    display: none;
+    margin-right: 15px;
+    height: 46px;
+    width: 49px;
+}
+.SpaceBlogFiltersToggler div{
+    width: 25px;
+    height: 2.5px;
+    margin: 5px auto;
+    background-color: rgb(235, 196, 47);
+}
+.SpaceBlogFiltersToggler div:nth-child(2){
+    width: 15px;
+}
+.SpaceBlogFiltersToggler div:nth-child(3){
+    width: 5px;
+}
+.navbar-brand::after{
+    width: 0 !important
+}
+@media(min-width: 992px){
+    .toggle-modal-holder{
+        order: 3;
+    }
+
+}
+@media(max-width: 767px){
+    .SpaceBlogFiltersToggler{
+        display: inline;
+    }
+    .JoinModal:last-child{
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+    .JoinModal:first-child{
+        display: none;
+    }
+    .joinButton, .joinButton:active,.joinButton:visited, .joinButton:focus, .joinButton:focus-within{
+        background-color:rgb(235, 196, 47)  !important;
+        color: black !important;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .nav-link:hover::after, .nav-button:hover::after, .partnershipButton:hover::after {
+        width: 0;
+    }
+}
+@media(max-width: 577px){
+
+
+}
