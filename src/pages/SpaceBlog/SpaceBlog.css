@@ -1,0 +1,224 @@
+.SpaceBlogFilters{
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;  
+
+}
+.SpaceBlogFilters ul{
+    padding: 20px 50px;
+    margin: 0 100px;
+    background-color: rgb(207, 205, 205);
+    width: fit-content;
+}
+.SpaceBlogFilters li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.SpaceBlogFilters li button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 15px;
+}
+.carousel img{
+    height: 75vh;
+    object-fit: cover;
+} 
+.carousel{
+    width: 100%;
+}
+.carousel-caption{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.carousel-caption div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+.carousel-caption div h1{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.carousel-caption div p{
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(226, 222, 222);
+    width: 75%;
+    margin-bottom: 30px;
+}
+.carousel-caption .badge{
+    margin: 0;
+    color: black;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 100%;
+}
+.carousel-control-prev{  
+    right: 250px;
+}
+.carousel-control-next{
+    right: 180px;
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 999;
+    top: unset;
+    bottom: 100px;
+    left: unset;
+    width: fit-content;
+    display: inline-block;
+    border: 1.5px solid white;
+    color: white;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 10px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    display: none;
+}
+.carousel .btn{
+    padding: 7.5px 15px;
+    background-color: white;
+    color: black !important;
+}
+.carousel .btn svg{
+    margin-right: 7px;
+    vertical-align: middle !important;
+}
+.carousel .carousel-control-prev svg, .carousel .carousel-control-next svg{
+    color: white;
+    width: 20px !important;
+    height: 20px;
+    display: block;
+}
+.custom-indicator{
+    position: absolute;
+    bottom: 170px;
+    right: 250px;
+    color: rgb(235, 196, 47);
+    z-index: 99999999;
+    font-size: 30px;
+}
+.SpaceBlogCards{
+    padding: 100px;
+}
+.activeFilter{
+    border-bottom: 2px solid black !important;
+}
+@media(max-width: 1200px){
+    .SpaceBlogFilters{
+        padding: 0 ;
+    }
+    .SpaceBlogFilters ul{
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .carousel-caption div h1{
+        font-size: 2.5rem;
+    }
+    .carousel-caption div p{
+        font-size: 1.3rem;
+        width: 90%;
+    }
+    .carousel-caption .badge{
+        padding: 7.5px 15px;
+    }
+    .carousel .btn{
+        padding: 5px 10px;
+    }
+    .carousel-control-prev, .custom-indicator{  
+        right: 12%;
+    }
+    .carousel-control-next{
+        right: 3%;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        bottom: 30px;
+    }
+    .custom-indicator{
+        bottom: 80px;
+    }
+}
+@media(max-width: 992px){
+    .SpaceBlogCards{
+        padding: 50px 0;
+    }
+}
+@media(max-width: 885px){
+    /* .SpaceBlogFilters{
+        padding: 0 ;
+    } */
+    .SpaceBlogFilters ul li{
+        margin-right: 9px;
+    }
+    .SpaceBlogFilters ul li button{
+        font-size: 14px;
+    }
+}
+@media(max-width: 767px){
+    .SpaceBlogFilters{
+        max-height: 0;
+        overflow: hidden;
+    }
+    .carousel-caption div h1{
+        font-size: 2rem;
+    }
+    .SpaceBlogFilters ul{
+        background-color: black;
+
+    }
+    .SpaceBlogFilters ul li{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .SpaceBlogFilters ul li button, .SpaceBlogFilters ul li a{
+        color: white !important;
+        padding-bottom: 5px;
+    }
+    .activeFilter{
+        border-bottom: 2px solid rgb(235, 196, 47) !important;
+    }
+}
+@media(max-width: 576px){
+    .carousel-caption div h1{
+        font-size: 1.5rem ;
+        margin-bottom: 10px;
+    }
+    .carousel-caption div p{
+        font-size: 1.2rem;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .carousel img{
+        height: 80vh;
+    } 
+    .carousel-caption div{
+        padding: 10px;
+    }
+    .carousel-control-prev{  
+        left: 5%;
+        right: unset;
+    }
+    .carousel-control-next{
+        right: 5%;
+    }
+    .carousel-control-prev, .carousel-control-next, .custom-indicator{
+        bottom: 15px;
+    }
+    .custom-indicator{
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

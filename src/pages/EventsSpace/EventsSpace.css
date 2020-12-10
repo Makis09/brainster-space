@@ -1,0 +1,83 @@
+.EventsSpace{
+    padding: 30px 100px 100px 100px;
+}
+.EventsSpace .HorizontalBigCard{
+    white-space: pre-wrap;
+}
+.EventsSpace .blackBtn span{
+    vertical-align: text-bottom;
+}
+.SimpleSpaceCard h5{
+    margin: 5px 0 20px 0;
+}
+.SimpleSpaceCard img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.OurSpace, .WeOffer{
+    padding: 100px 0;
+}
+.SimpleSpaceCard img:hover{
+    cursor: pointer;
+}
+.bigImage img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.smallImage{
+    margin-top: 30px;
+}
+.WeOffer h1{
+    margin-bottom: 50px;
+}
+.WeOffer span{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+}
+.bigImageSMscreen{
+    display: none;
+}
+.SpaceKitchen .smallImage{
+    margin-top: 30px;
+}
+.WeOffer svg{
+    color: rgb(255, 179, 0);
+    margin-right: 10px;
+}
+@media(max-width: 1200px){
+
+}
+@media(max-width: 991px){
+    .EventsSpace{
+        padding: 50px;
+    }
+    .bigImage img{
+        display: none;
+    }
+    .bigImageSMscreen{
+        display: inline-block;
+    }
+    .Host{
+        flex-direction: row-reverse;
+    }
+    .SpaceKitchen .imageGallery{
+        order: 2;
+    }
+}
+@media(max-width: 576px){
+
+    .EventsSpace{
+        padding: 50px 15px;
+    }
+
+    .bigImageSMscreen{
+        margin-top: 30px;
+    }
+}

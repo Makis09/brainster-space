@@ -1,0 +1,16 @@
+.NoMatch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgb(93, 125, 214);
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.NoMatch a {
+    border: 2px solid white;
+    margin-top: 100px;
+}

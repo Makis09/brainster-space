@@ -1,85 +1,87 @@
-.Footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: rgb(236, 236, 236);
-    border-top: 1.5px solid rgb(182, 181, 181);
+.Footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(236, 236, 236);
+  border-top: 1.5px solid rgb(182, 181, 181);
 }
-.UsefulLinks ul, .SocialNetworks ul{
-    list-style-type: none;
-    padding: 5px 0 0 0;
+.UsefulLinks ul,
+.SocialNetworks ul {
+  list-style-type: none;
+  padding: 5px 0 0 0;
 }
-.UsefulLinks ul li{
-    padding: 5px 0; 
+.UsefulLinks ul li {
+  padding: 5px 0;
 }
-.SocialNetworks ul{
-    margin-top: 15px;
+.SocialNetworks ul {
+  margin-top: 15px;
 }
-.SocialNetworks ul li{
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
+.SocialNetworks ul li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
 }
-.facebook svg{
-    color: rgb(96, 96, 240);
+.facebook svg {
+  color: rgb(96, 96, 240);
 }
-.linkedin svg{
-    padding: 7px;
-    display: block;
-    margin: auto;
-    color: rgb(236, 236, 236);
+.linkedin svg {
+  padding: 7px;
+  display: block;
+  margin: auto;
+  color: rgb(236, 236, 236);
 }
-.linkedin{
-    display: inline-block;
-    width: 32px !important;
-    border-radius: 50%;
-    background-color: rgb(41, 149, 238);
+.linkedin {
+  display: inline-block;
+  width: 32px !important;
+  border-radius: 50%;
+  background-color: rgb(41, 149, 238);
 }
-.Footer .svg-inline--fa{
-    vertical-align: 0;
+.Footer .svg-inline--fa {
+  vertical-align: 0;
 }
-.instagram svg{
-    color: rgb(248, 105, 129);
+.instagram svg {
+  color: rgb(248, 105, 129);
 }
-.FooterLogo img{
-    width: 100%;
+.FooterLogo img {
+  width: 100%;
+  cursor: pointer;
 }
-.UsefulLinks .contact{
-    cursor: pointer;
+.UsefulLinks .contact {
+  cursor: pointer;
 }
-.copyright p{
-    text-align: center;
-    margin: 0 -15px;
-    padding: 20px 0;
-    background-color: rgb(207, 205, 205);
+.copyright p {
+  text-align: center;
+  margin: 0 -15px;
+  padding: 20px 0;
+  background-color: rgb(207, 205, 205);
 }
-.bs-popover-top{
-    margin: 0 !important;
-    bottom: 0.5rem !important;
+.bs-popover-top {
+  margin: 0 !important;
+  bottom: 0.5rem !important;
 }
-@media(min-width: 1200px){
-    .Footer{
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+@media (min-width: 1200px) {
+  .Footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
-@media(max-width: 575px){
-    .Footer{
-        padding: 50px 15px;
-    }
-    .FooterLogo{
-        order: 1 !important;
-        margin-bottom: 30px;
-    }
-    .UsefulLinks{
-        order: 2 !important;
-        margin-bottom: 15px;
-    }
-    .SocialNetworks{
-        order: 3 !important;
-    }
+@media (max-width: 575px) {
+  .Footer {
+    padding: 50px 15px;
+  }
+  .FooterLogo {
+    order: 1 !important;
+    margin-bottom: 30px;
+  }
+  .UsefulLinks {
+    order: 2 !important;
+    margin-bottom: 15px;
+  }
+  .SocialNetworks {
+    order: 3 !important;
+  }
 }
-@media(max-width: 375px){
-    .copyright p {
-        font-size: 14px;
-    }
+@media (max-width: 375px) {
+  .copyright p {
+    font-size: 14px;
+  }
 }
